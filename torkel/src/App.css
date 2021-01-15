@@ -1,13 +1,23 @@
+#Webformating {
 
+}
 
+#Webheader {
+    
+}
 
+#Webbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px red;
+}
 
-
-
-
-/* .login-form{
-  margin-top:20%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-} */
+#Webfooter {
+    
+}

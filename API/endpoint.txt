@@ -1,0 +1,26 @@
+
+
+
+GET requests
+/current/runners -> returning runners that are currently accepting orders
+	runner name and restraunts they are heading to and drop off time
+/current/restraunts
+	names of restraunts that runners are going to today
+/current/hotItems
+	name description of items Math.random on menu based off the restraunts that are on the menu today
+/current/runnerTimes
+	drop off location and time and runner name
+
+
+/runner:id
+
+
+POST requests
+/users -> params in body
+	taking in the firstname lastname email password, isUser, wantsRunner
+	send back message saying thank you for registering {message: ''}
+
+
+
+
+Note: add wantsRunner for runner manager to see what users want to be runners

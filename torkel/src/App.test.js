@@ -5,6 +5,6 @@ import React from "react";
 describe("test", () => {
     it("passes", () => {
         const wrapper = shallow(<App />);
-        expect(wrapper.find(".header").exists()).toBeTruthy();
+        expect(wrapper.find(".Webheader")).toBeTruthy();
     })
 })

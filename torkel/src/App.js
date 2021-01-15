@@ -9,19 +9,27 @@ import {
 import Header from './components/header/Header'
 import Footer from './components/Footer/Footer' 
 import Login from './components/Login/Login'
+import HomePage from './components/HomePage/homePage';
 
 
 function App() {
 
   return (
+    
     <Router>
-      <div className="header">
+      <div id='Webformating'>
+      <div id="Webheader">
         <Header />
       </div>
 
+      <div id='Webbody'>
       <Switch>
         <Route exact path='/'>
           {/*Put homepage here */}
+        </Route>
+
+        <Route exact path='/homePage'>
+          <HomePage />
         </Route>
 
         <Route exact path='/cart'>
@@ -34,11 +42,15 @@ function App() {
         </Route>
      
       </Switch>
+      </div>
 
-      <div className="footer">
+      <div id="Webfooter">
         <Footer />
       </div>
+
+      </div>  
     </Router>
+    
   );
 }
 

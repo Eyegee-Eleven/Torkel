@@ -1,0 +1,17 @@
+FROM alpine:latest
+
+RUN mkdir -p /API
+
+WORKDIR /API
+
+COPY . /API
+
+RUN apk add --update nodejs npm \
+	&& npm install \
+	&& npm install morgan \
+	&& npm install helmet \
+	&& npm install cors \
+	&& npm install express \
+	&& npm install axios
+
+CMD [ "npm", "start" ]

@@ -3,8 +3,7 @@ import './Login.css'
 
 export default function Login(){
     return (
-        <>
-       
+        <>       
             <div className='form'>
                 <h1 className="test">Login</h1>
                 <form id ="login">
@@ -21,8 +20,7 @@ export default function Login(){
                     <div className="register">Register for an account</div>
                     <div className="forgot-password">Forgot Password</div>
                 </form>
-            </div>
-          
+            </div>          
         </>
     )
 }

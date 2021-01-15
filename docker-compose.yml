@@ -15,21 +15,21 @@ services:
     volumes:
       - ./Database:/Database
 
-  # XXX:
-  #   build: ./XX
-  #   restart: always
-  #   environment:
-  #     POSTGRES_HOST: postgres:testPass@postgres:4000
-  #   ports:
-  #     - 8000:3000
-  #   depends_on:
-  #     torkelpostgres:
-  #       condition: service_healthy
-  #   networks:
-  #     dbnetwork:
-  #       ipv4_address: 10.0.0.12
-  #   volumes:
-  #     - ./API:/API
+  torkelapi:
+    build: ./API
+    restart: always
+    environment:
+      POSTGRES_HOST: postgres:testPass@postgres:5432
+    ports:
+      - 8000:3000
+    depends_on:
+      torkelpostgres:
+        condition: service_healthy
+    networks:
+      dbnetwork:
+        ipv4_address: 10.1.0.12
+    volumes:
+      - ./API:/API
 
 networks:
   dbnetwork:
