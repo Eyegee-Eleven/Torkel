@@ -26,6 +26,7 @@ const StateProvider = (props) => {
       },
     },
 
+
     cart: [],
     setState: (newState) => {
       updateState((state) => {
